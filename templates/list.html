@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Neosam's dev blog</title>
+        <title>{context.title} - Neosam's dev blog</title>
         <link rel="stylesheet" href="../static/bootstrap.min.css" />
     </head>
     <body>
@@ -12,7 +12,7 @@
             </span>
             <span class="navbar-text"></span>
         </nav>
-        <div class="container">
+        <div class="container"><div class="col-md-8 offset-md-2">
             {{for post in posts -}}
             <h1><a href="{context.ctxt}/post/{post.header.id}.html">{post.header.title}</a></h1>
                 {post.body | unescaped}
@@ -22,7 +22,14 @@
                 </div>
                 <hr/>
             {{ - endfor }}
-        </div>
-        
+        </div></div>
+        <nav class="navbar fixed-bottom navbar-dark bg-dark">
+                <span class="navbar-text">
+                        <small>The content and the design of this blog is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</small>
+                </span>
+                <span class="navbar-text">
+                    <small><a href="{context.ctxt}/post/2019-11-25-license-and-privacy.html">This page doesn't track you</a></small>
+                </span>
+            </nav>
     </body>
 </html>
