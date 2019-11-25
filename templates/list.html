@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Neosam's dev blog</title>
+        <link rel="stylesheet" href="../static/bootstrap.min.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="{context.ctxt}">Neosam's dev blog</a>
+            <span class="navbar-text">
+                {context.title}
+            </span>
+            <span class="navbar-text"></span>
+        </nav>
+        <div class="container">
+            {{for post in posts -}}
+            <h1><a href="{context.ctxt}/post/{post.header.id}.html">{post.header.title}</a></h1>
+                {post.body | unescaped}
+                <div class="font-weight-lighter">
+                    Author: {post.header.author}, 
+                    Date: {post.header.date}
+                </div>
+                <hr/>
+            {{ - endfor }}
+        </div>
+        
+    </body>
+</html>

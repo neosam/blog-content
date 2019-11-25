@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Neosam's dev blog</title>
+        <link rel="stylesheet" href="../static/bootstrap.min.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Neosam's dev blog</a>
+            <span class="navbar-text">
+                {title}
+            </span>
+            <span class="navbar-text"></span>
+        </nav>
+        <div class="container">
+            <h1>{title}</h1>
+            {main | unescaped}
+            <hr/>
+            <footer class="font-weight-lighter">
+                Author: {author}, 
+                Date: {date}
+            </footer>
+        </div>
+        
+    </body>
+</html>
