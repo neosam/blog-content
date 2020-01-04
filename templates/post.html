@@ -6,19 +6,19 @@
     </head>
     <body>
         <nav class="navbar navbar-dark bg-dark mb-5">
-		<a class="navbar-brand" href="{ctxt}">Neosam's dev blog</a>
+		<a class="navbar-brand" href="{{ctxt}}">Neosam's dev blog</a>
             <span class="navbar-text">
-                {title}
+                {{title}}
             </span>
             <span class="navbar-text"></span>
         </nav>
         <div class="container">
-            <h1>{title}</h1>
-            {main | unescaped}
+            <h1>{{title}}</h1>
+            {{{main}}}
             <hr/>
             <div class="font-weight-lighter">
-                Author: {author}, 
-                Date: {date}
+                Author: {{author}}, 
+                Date: {{date}}
             </div>
         </div>
         <nav class="navbar fixed-bottom navbar-dark bg-dark">
@@ -26,7 +26,7 @@
                     <small>The content and the design of this blog is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</small>
             </span>
             <span class="navbar-text">
-                <small><a href="{ctxt}/post/2019-11-25-license-and-privacy.html">This page doesn't track you</a></small>
+                <small><a href="{{ctxt}}/post/2019-11-25-license-and-privacy.html">This page doesn't track you</a></small>
             </span>
         </nav>
     </body>
