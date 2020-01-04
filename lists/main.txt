@@ -1,5 +1,6 @@
 ---
 title: home
 ---
+2020-01-04-blog-performance
 2019-11-25-license-and-privacy
 2019-11-24-first-post
