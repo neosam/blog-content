@@ -16,16 +16,23 @@
             </span>
             <span class="navbar-text"></span>
         </nav>
-        <div class="container">
-            <h1>{{title}}</h1>
-            {{{main}}}
-            <hr/>
-            <div class="font-weight-lighter">
-                Author: {{author}}, 
-                Date: {{date}}
+        <main>
+            <div class="container" style="max-width: 60em;">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="card-title">{{title}}</h1>
+                    </div>
+                    <div class="card-body">
+                        {{{main}}}
+                    </div>
+                    <div class="card-footer">
+                        Author: {{author}}, 
+                        Date: {{date}}
+                    </div>
+                </div>
             </div>
-        </div>
-        <nav class="navbar fixed-bottom navbar-dark bg-dark d-none d-sm-block">
+        </main>
+        <nav class="navbar fixed-bottom navbar-dark bg-dark d-none d-lg-block">
             <span class="navbar-text">
                     <small>The content and the design of this blog is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</small>
             </span>
