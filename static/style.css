@@ -1,4 +1,8 @@
 body {
+  background-color: black;
+}
+
+.container {
   margin: 0;
   padding: 0;
   display: grid;
@@ -10,10 +14,12 @@ body {
     "footer";
 }
 
-body {
+.container {
   background: #333;
   color: #DDD;
   font-family: mono;
+  width: 100%;
+  justify-content: stretch;
 }
 
 header {
@@ -46,7 +52,7 @@ a {
       "title section .";
   }
 
-  body {
+  .container {
     margin: 0;
     padding: 0;
     display: grid;
@@ -90,11 +96,12 @@ main article footer {
   color: #AAA;
 }
 
+
 main article {
   padding-bottom: 2em;
 }
 
-body > footer {
+.container > footer {
   grid-area: footer;
   padding: 1em;
   background-color: #000;
