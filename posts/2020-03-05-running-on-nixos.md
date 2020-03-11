@@ -1,6 +1,6 @@
 ---
 title: Running on NixOS
-date: 2020-03-05
+date: 2020-03-05T09:00:00+02:00
 author: neosam
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: This week in rusty blog
-date: 2020-01-19
+date: 2020-01-19T09:00:00+02:00
 author: neosam
 ---
 

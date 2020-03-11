@@ -1,6 +1,6 @@
 ---
 title: Ein weiterer Post
-date: 2019-11-25
+date: 2019-11-25T09:00:00+02:00
 author: neosam
 ---
 

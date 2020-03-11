@@ -1,44 +1,26 @@
-<!DOCTYPE html>
-<html>
-    <head >
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <title>{{title}} - Neosam's dev blog</title>
-        <link rel="stylesheet" href="../static/bootstrap.min.css" />
-    </head>
-    <body>
-        <nav class="navbar navbar-dark bg-dark mb-5">
-		<a class="navbar-brand" href="{{ctxt}}">Neosam's dev blog</a>
-            <span class="navbar-text">
-                {{title}}
-            </span>
-            <span class="navbar-text"></span>
-        </nav>
-        <main>
-            <div class="container" style="max-width: 60em;">
-                <div class="card">
-                    <div class="card-header">
-                        <h1 class="card-title">{{title}}</h1>
-                    </div>
-                    <div class="card-body">
-                        {{{main}}}
-                    </div>
-                    <div class="card-footer">
-                        Author: {{author}}, 
-                        Date: {{date}}
-                    </div>
-                </div>
-            </div>
-        </main>
-        <nav class="navbar fixed-bottom navbar-dark bg-dark d-none d-lg-block">
-            <span class="navbar-text">
-                    <small>The content and the design of this blog is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</small>
-            </span>
-            <span class="navbar-text">
-                <small><a href="{{ctxt}}/post/2019-11-25-license-and-privacy.html">This page doesn't track you</a></small>
-            </span>
-        </nav>
-    </body>
+<!doctype html>
+<html>    
+ <head>    
+  <meta charset="UTF-8">    
+  <title>{{title}} - neosam's dev blog</title>    
+  <link rel="stylesheet" type="text/css" href="{{blog.ctxt}}/static/style.css">    
+ </head>    
+ <body>    
+  <header>    
+   <h1><a href="{{blog.ctxt}}">neosam's dev blog</a></h1>    
+   <h2>{{title}}</h2>    
+  </header>   
+  <main>
+   <article>
+   <h1>{{title}}</h1>    
+    {{{body}}}
+    <footer>Author: {{author}}, published: {{date}}</footer>    
+   </article>    
+  </main>
+  <footer>
+    <p>The content and the design of this blog is licensed under 
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+    <p><a href="{{blog.ctxt}}/post/2019-11-25-license-and-privacy.html">This page doesn't track you</a></p>
+  </footer>
+ </body>
 </html>

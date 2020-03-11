@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+body {
+  background: #333;
+  color: #DDD;
+  font-family: mono;
+}
+
+header {
+  background: #000;
+  padding-left:.5em;
+  padding-right: .5em;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title"
+    "section";
+}
+
+a {
+  color: #F80;
+}
+
+@media only screen and (min-width: 42em) { 
+  header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title section .";
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto 50em auto;
+    grid-template-rows: auto auto 100px;
+    grid-template-areas:
+      "header header header"
+      ". main ."
+      "footer footer footer";
+  }
+}
+
+header h1 a {
+  grid-area: title;
+  padding-left: 2em;
+  padding-right: 1em;
+  background-image: url(./neosam.jpeg);
+  background-size: 1.2em;
+  background-repeat: no-repeat;
+  background-position-x: 0.5em;
+  text-decoration: none;
+  color: #FFF;
+}
+header h2 {
+  grid-area: section;
+  place-self: center;
+}
+
+main {
+  grid-area: main;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+main article h1 {
+  color: #F80;
+}
+main article h1 a {
+  color: #F80;
+}
+main article footer {
+  color: #AAA;
+}
+
+main article {
+  padding-bottom: 2em;
+}
+
+body > footer {
+  grid-area: footer;
+  padding: 1em;
+  background-color: #000;
+}

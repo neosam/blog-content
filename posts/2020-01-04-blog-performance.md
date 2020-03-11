@@ -1,6 +1,6 @@
 ---
 title: Blog modernization and performance upgrades
-date: 2020-01-04
+date: 2020-01-04T09:00:00+02:00
 author: neosam
 ---
 

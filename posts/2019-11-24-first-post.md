@@ -1,6 +1,6 @@
 ---
 title: New blog
-date: 2019-11-24
+date: 2019-11-24T09:00:00+02:00
 author: neosam
 ---
 
