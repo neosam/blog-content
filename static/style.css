@@ -17,7 +17,7 @@ body {
 .container {
   background: #333;
   color: #DDD;
-  font-family: mono;
+  font-family: monospace;
   width: 100%;
   justify-content: stretch;
 }
