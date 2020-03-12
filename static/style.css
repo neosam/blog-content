@@ -18,6 +18,7 @@ body {
   background: #333;
   color: #DDD;
   font-family: monospace;
+  font-size: 12px;
   width: 100%;
   justify-content: stretch;
 }
