@@ -18,7 +18,8 @@ body {
   background: #333;
   color: #DDD;
   font-family: monospace;
-  font-size: 12px;
+  font-size: 11pt;
+  line-height: 1.5;
   width: 100%;
   justify-content: stretch;
 }
@@ -27,6 +28,10 @@ header {
   background: #000;
   padding-left:.5em;
   padding-right: .5em;
+  font-size: 12pt;
+}
+header h1 {
+  font-size: 17pt;
 }
 
 header {
@@ -43,7 +48,7 @@ a {
   color: #F80;
 }
 
-@media only screen and (min-width: 42em) { 
+@media only screen and (min-width: 746px) { 
   header {
     grid-area: header;
     display: grid;
@@ -86,6 +91,7 @@ main {
   grid-area: main;
   margin-left: .5em;
   margin-right: .5em;
+  padding-top: 3em;
 }
 main article h1 {
   color: #F80;
@@ -101,6 +107,15 @@ main article footer {
 main article {
   padding-bottom: 2em;
 }
+
+/*code {
+  background-color: black;
+  border: 1px solid white;
+  padding: 1em;
+  display: block;
+  overflow: hidden;
+
+}*/
 
 .container > footer {
   grid-area: footer;
