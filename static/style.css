@@ -121,4 +121,26 @@ main article {
   grid-area: footer;
   padding: 1em;
   background-color: #000;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "license license"
+    "privacy software";
+}
+
+.container > footer .license {
+  grid-area: license;
+}
+
+.container > footer .privacy {
+  grid-area: privacy;
+}
+
+.container > footer .software {
+  grid-area: software;
+  font-size: 8px;
+  color: #888;
+  align-self: end;
+  justify-self: end;
 }
